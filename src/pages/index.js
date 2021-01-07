@@ -1,16 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
+import ProjectCard from "../components/cards/ProjectCard"
+import SkillCard from "../components/cards/SkillCard"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
+import ConnectSection from "../components/section/ConnectSection"
+import HeroSection from "../components/section/HeroSection"
+import SkillSection from "../components/section/SkillSection"
+import WorkSection from "../components/section/WorkSection"
 
 function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <img src="/images/logos/logo.svg" alt="logo" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
+      <HeroSection />
+      <SkillSection />
+      <SkillCard />
+      <WorkSection />
+      <ProjectCard />
+      <ConnectSection />
     </Layout>
   )
 }
